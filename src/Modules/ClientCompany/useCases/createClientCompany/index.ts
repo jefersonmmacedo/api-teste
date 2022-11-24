@@ -1,11 +1,11 @@
-import { AccountClientRepository } from "../../repositories/implementations/ClientCompanyRepository";
-import { CreateAccountClientController } from "./CreateClientCompanyController";
-import { CreateAccountClientUseCase } from "./CreateClientCompanyUseCase";
+import { ClientCompanyRepository } from "../../repositories/implementations/ClientCompanyRepository";
+import { CreateClientCompanyController } from "./CreateClientCompanyController";
+import { CreateClientCompanyUseCase } from "./CreateClientCompanyUseCase";
 
-const accountClientRepository = AccountClientRepository.getInstance();
+const clientCompanyRepository = ClientCompanyRepository.getInstance();
 
-const createAccountClientUseCase = new CreateAccountClientUseCase(accountClientRepository);
+const createClientCompanyUseCase = new CreateClientCompanyUseCase(clientCompanyRepository);
 
-const createAccountClientController = new CreateAccountClientController(createAccountClientUseCase);
+const createClientCompanyController = new CreateClientCompanyController(createClientCompanyUseCase);
 
-export { createAccountClientController };
+export { createClientCompanyController };
