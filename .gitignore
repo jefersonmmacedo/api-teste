@@ -24,3 +24,5 @@ yarn-error.log*
 
 # Nuxt.js build / generate output
 dist
+
+.vercel
